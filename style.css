@@ -1,0 +1,116 @@
+
+body {
+            background-color: #f8f3eb;
+        }
+
+.container text-center h1 {
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+.navbar {
+            background-color: #6f4e37;
+        }
+.navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+.carousel-item {
+            height: 65vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+.carousel-caption {
+            bottom: 220px;
+        }
+.carousel-caption h1 {
+            font-size: 50px;
+            text-shadow: 1px 1px 10px #000;
+        }
+.carousel-caption p {
+            width: 75%;
+            margin: auto;
+            font-size: 18px;
+            text-shadow: 1px 1px 10px #000;
+        }
+.carousel-caption a {
+            text-decoration: none;
+            background-color: #6f4e37;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+.carousel-caption a:hover {
+            background-color: #fff;
+            color: #6f4e37;
+        }
+.carousel-caption a:active {
+            background-color: #fff;
+            color: #6f4e37;
+        }
+.carousel-caption a:focus {
+            background-color: #fff;
+            color: #6f4e37;
+        }
+.carousel-caption a:visited {
+            background-color: #fff;
+            color: #6f4e37;
+        }
+.carousel-caption a:link {
+            background-color: #fff;
+            color: #6f4e37;
+        }
+.carousel-caption a:hover, .carousel-caption a:active, .carousel-caption a:focus, .carousel-caption a:visited, .carousel-caption a:link {
+            text-decoration: none;
+        }
+.carousel-caption a:hover, .carousel-caption a:active, .carousel-caption a:focus, .carousel-caption a:visited, .carousel-caption a:link {
+            text-decoration: none;
+        }
+.carousel-caption a:hover, .carousel-caption a:active, .carousel-caption a:focus, .carousel-caption a:visited, .carousel-caption a:link {
+            text-decoration: none;
+        }
+.carousel-caption a:hover, .carousel-caption a:active, .carousel-caption a:focus, .carousel-caption a:visited, .carousel-caption a:link {
+            text-decoration: none;
+        }
+.carousel-caption a:hover, .carousel-caption a:active, .carousel-caption a:focus, .carousel-caption a:visited, .carousel-caption a:link {
+            text-decoration: none;
+        }
+img {
+            width: 100%;
+            height: auto;
+        }
+.jumbotron {
+            background-color: #6f4e37;
+            color: #fff;
+            padding: 100px 25px;
+        }
+.jumbotron h1 {
+            font-size: 50px;
+        }
+.jumbotron p {
+            font-size: 20px;
+        }
+.card {
+            margin-top: 20px;
+        }
+.card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+.card h4 {
+            margin-top: 20px;
+        }   
+footer {
+            background-color: #6f4e37;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+    #map { height: 400px; width: 100%; }
+
+   

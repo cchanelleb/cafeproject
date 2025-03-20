@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brew Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admindashboard.html">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Menu</h1>
+        <p>Explore our handcrafted coffee and delicious pastries.</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="menu-items">
+                <tr><td colspan="3" class="text-center">Loading menu...</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function() {
+            let items = [
+                { "item": "Vanilla Latte", "description": "Coffee", "price": "$4.00" },
+                { "item": "Cappincino", "description": "Hot Rich tasty", "price": "$2.50" },
+                { "item": "Caramel Frappacino", "description": "Blended Ice Caramel Frappacino", "price": "$5.00" },
+                { "item": "Bacon Sandwich", "description": "Breakfast Bacon Sandwich", "price": "$6.00" },
+                { "item": "Chocolate Chip Cookie", "description": "Chocolate Chip Cookie", "price": "$2.00" },
+                { "item": "Mocha", "description": "Hot Chocolate", "price": "$3.50" },
+                { "item": "Caramel Macchiato", "description": "Caramel Macchiato", "price": "$4.50"},
+                { "item": "Hot Caramel Macchiato", "price": "$4.50" },
+                { "item": "Cinnamon Roll", "description": "Cinnamon Roll", "price": "$3.00" },
+                { "item": "Blueberry Muffin", "description": "Blueberry Muffin", "price": "$2.50" },
+                { "item": "Iced Coffee", "description": "Iced Coffee", "price": "$3.00" },
+                { "item": "Iced Tea", "description": "Iced Tea", "price": "$2.50" },
+                { "item": "Hot Tea", "description": "Hot Tea", "price": "$2.00" },
+                { "item": "Hot Chocolate", "description": "Hot Chocolate", "price": "$3.00" },
+                { "item": "Espresso", "description": "Espresso", "price": "$2.00" },
+                { "item": "Caramel Latte", "description": "Caramel Latte", "price": "$4.00" },
+                { "item": "Caramel Macchiato", "description": "Caramel Macchiato", "price": "$4.50"},
+                { "item": "Caramel Frappacino", "description": "Caramel Frappacino", "price": "$5.00"},
+                { "item": "Cappuccino", "description": "Cappuccino", "price": "$3.50" },
+                { "item": "Cafe Mocha", "description": "Cafe Mocha", "price": "$4.00" },
+                { "item": "Cafe Latte", "description": "Cafe Latte", "price": "$3.50" },
+                { "item": "Bacon Sandwich", "description": "Bacon Sandwich", "price": "$6.00" },
+                { "item": "Bagel", "description": "Bagel", "price": "$2.00" },
+                { "item": "Blueberry Muffin", "description": "Blueberry Muffin", "price": "$2.50" },
+                { "item": "Chocolate Chip Cookie", "description": "Chocolate Chip Cookie", "price": "$2.00" },
+            ];
+            
+            let menuHtml = "";
+            
+            if (items.length > 0) {
+                items.forEach(function(item) {
+                    menuHtml += `
+                        <tr>
+                            <td>${item.item}</td>
+                            <td>${item.description}</td>
+                            <td>${item.price}</td>
+                        </tr>`;
+                });
+            } else {
+                menuHtml = "<tr><td colspan='3'>No menu items available.</td></tr>";
+            }
+            
+            $("#menu-items").html(menuHtml);
+        });
+    </script>
+</body>
+</html>
